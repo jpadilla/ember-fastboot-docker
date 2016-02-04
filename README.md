@@ -6,9 +6,9 @@ Dockerized Node.js server for running Ember FastBoot apps. Based on [Ember FastB
 
 ```
 $ docker run \
-  --rm \
+  --rm -it \
   -p 8080:3000 \
-  -v ${pwd}/fastboot-dist:/src/fastboot-dist \
+  -v $(pwd)/fastboot-dist:/src/fastboot-dist \
   jpadilla/ember-fastboot-server
 ```
 
